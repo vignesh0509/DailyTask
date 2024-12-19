@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            background-color: greenyellow;
+            margin: 10px;
+            height: 200px;
+            flex-basis: auto;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .blue {
+            background-color: rgb(64, 151, 232);
+            margin: 10px;
+            height: 200px;
+            flex-basis: 20%;
+        }
+
+        @media screen and (max-width: 500px) {
+            .blue {
+                flex-basis: 100%;
+            }
+        }
+
+        .box3 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+
+        }
+
+        .gray {
+            background-color: rgb(160, 167, 174);
+            margin: 10px;
+            height: 200px;
+            flex-basis: 200px;
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .gray {
+                flex-basis: 20%;
+                float: left;
+            }
+
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .gray {
+                flex-basis: 40%;
+
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .gray {
+                flex-basis: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="green"></div>
+    <div class="box1">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+    </div>
+    <div class="box3">
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray"></div>
+    </div>
+
+</body>
+
+</html>

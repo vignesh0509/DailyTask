@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen{
+            body{
+                background-color: rgba(231, 220, 14, 0.912);
+            }
+         }
+         @media screen and (max-width: 800px) {
+            body{
+                background-color: rgb(0, 4, 255);
+            }
+         }
+         @media screen and (max-width: 600px) {
+            body{
+                background-color: rgb(255, 0, 0);
+            }
+         }
+
+
+
+
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: lightblue;
+            border: 5px solid black;
+            
+        }
+      
+
+        #blue {
+            background-color: blue;
+            margin: 10px;
+            text-align: center;
+            height: 50px;
+            width: auto;
+        }
+        .cls2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+        }
+
+        #orange {
+            background-color: orange;
+            width: 650px;
+            margin: 10px;
+
+        }
+
+        #green {
+            background-color: green;
+            height: 50px;
+            width: 1000px;
+            margin: 10px;
+        }
+
+        .cl3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-grow: 100%;
+
+        }
+
+        #red {
+            
+            background-color: red;
+            height: 30px;
+            width: 850px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="blue">
+            <p>Blue</p>
+        </div>
+
+        <div class="cls2">
+            <div id="orange">
+            <p>orange</p>
+            </div>
+            <div>
+                <div id="green">
+                    <p>Green</p>
+                </div>
+                <div id="green">
+                    <p>Green</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cl3" >
+            <div id="red">
+                <p>Red</p>
+            </div>
+            <div id="red">
+                <p>Red</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
